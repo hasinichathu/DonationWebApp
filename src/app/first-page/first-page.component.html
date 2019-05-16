@@ -72,16 +72,16 @@
     <div class="w3-container">
       <div class="w3-row ">
         <div class="w3-col m8">
-          <slideshow [height]="height" [minHeight]="'500px'" [autoPlay]="true" [showArrows]="true"
+          <slideshow [height]="height" [minHeight]="'509px'" [autoPlay]="true" [showArrows]="true"
             [imageUrls]=imageSources [lazyLoad]="imageSources?.length > 1" [autoPlayWaitForLazyLoad]="true"
             [showDots]="true">
           </slideshow>
         </div>
 
-        <div class="w3-col m4 login-container">
+        <div class="w3-col m4 ">
           <!-- Login -->
-          <div class="w3-row w3-container">
-            <div class="w3-center ">
+          <div class="w3-row w3-container login-container">
+            <div class="w3-center "><br>
               <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Login</span>
             </div><br><br>
             <form action="/action_page.php">
@@ -98,7 +98,7 @@
                 <label>
                   <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>
-              </div>
+              </div><br>
 
               <div class="container" style="background-color:#f1f1f1">
                 <button type="button" class="cancelbtn btn">Cancel</button>
@@ -112,15 +112,15 @@
     <!-- Grid -->
     <div class="w3-row w3-container">
       <div class="w3-center w3-padding-64">
-        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span>
+        <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Can Do For You</span>
       </div>
       <div class="w3-col l3 m6 w3-light-grey w3-container w3-padding-16">
-        <h3>Design</h3>
+        <h3>Organ Doners</h3>
         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
       </div>
 
       <div class="w3-col l3 m6 w3-grey w3-container w3-padding-16">
-        <h3>Branding</h3>
+        <h3>Blood Doners</h3>
         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
       </div>
 
@@ -130,7 +130,7 @@
       </div>
 
       <div class="w3-col l3 m6 w3-black w3-container w3-padding-16">
-        <h3>Promises</h3>
+        <h3>Fund Raising</h3>
         <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
       </div>
     </div>
@@ -139,13 +139,15 @@
     <!-- Grid -->
     <div class="w3-row-padding" id="plans">
       <div class="w3-center w3-padding-64">
-        <h3>Pricing Plans</h3>
+        <h3><span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">What We Offer</span></h3>
+        <br>
         <p>Choose a pricing plan that fits your needs.</p>
       </div>
 
-      <div class="w3-third w3-margin-bottom">
+
+      <div class="w3-third w3-margin-bottom ">
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-          <li class="w3-black w3-xlarge w3-padding-32">Basic</li>
+          <li class="w3-black w3-xlarge w3-padding-32">Organ Doners</li>
           <li class="w3-padding-16"><b>10GB</b> Storage</li>
           <li class="w3-padding-16"><b>10</b> Emails</li>
           <li class="w3-padding-16"><b>10</b> Domains</li>
@@ -155,14 +157,14 @@
             <span class="w3-opacity">per month</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+            <button class="w3-button w3-green w3-padding-large">Donate</button>
           </li>
         </ul>
       </div>
 
       <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Pro</li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Blood Doners</li>
           <li class="w3-padding-16"><b>25GB</b> Storage</li>
           <li class="w3-padding-16"><b>25</b> Emails</li>
           <li class="w3-padding-16"><b>25</b> Domains</li>
@@ -172,14 +174,14 @@
             <span class="w3-opacity">per month</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+            <button class="w3-button w3-green w3-padding-large">Donate</button>
           </li>
         </ul>
       </div>
 
       <div class="w3-third w3-margin-bottom">
         <ul class="w3-ul w3-border w3-center w3-hover-shadow">
-          <li class="w3-black w3-xlarge w3-padding-32">Premium</li>
+          <li class="w3-black w3-xlarge w3-padding-32">Fund Raising</li>
           <li class="w3-padding-16"><b>50GB</b> Storage</li>
           <li class="w3-padding-16"><b>50</b> Emails</li>
           <li class="w3-padding-16"><b>50</b> Domains</li>
@@ -189,7 +191,7 @@
             <span class="w3-opacity">per month</span>
           </li>
           <li class="w3-light-grey w3-padding-24">
-            <button class="w3-button w3-green w3-padding-large">Sign Up</button>
+            <button class="w3-button w3-green w3-padding-large">Donate</button>
           </li>
         </ul>
       </div>

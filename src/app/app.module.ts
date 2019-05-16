@@ -18,6 +18,9 @@ import { FeedControllerService } from './Services/feed-controller.service';
 import { FirstPageComponent } from './first-page/first-page.component';
 import {SlideshowModule} from 'ng-simple-slideshow';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { BloodDonationComponent } from './blood-donation/blood-donation.component';
+import { OrganDonationComponent } from './organ-donation/organ-donation.component';
+import { FundRaisingComponent } from './fund-raising/fund-raising.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     NewsFeedComponent,
     NewsFeedItemComponent,
     FirstPageComponent,
-    SignUpComponent
+    SignUpComponent,
+    BloodDonationComponent,
+    OrganDonationComponent,
+    FundRaisingComponent
   ],
   imports: [
     BrowserModule,
