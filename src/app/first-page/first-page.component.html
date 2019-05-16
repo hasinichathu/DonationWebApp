@@ -94,7 +94,7 @@
                 <input type="password" placeholder="Enter Password" name="psw" [(ngModel)]="psw" required>
 
                 <button type="submit" (click)=login(uname.value,psw.value) class="btn">Login</button>
-                <button type="signup" class="btn">Sign UP</button><br>
+                <button type="signup" class="btn" (click)=signUp()>Sign UP</button><br>
                 <label>
                   <input type="checkbox" checked="checked" name="remember"> Remember me
                 </label>

@@ -22,6 +22,9 @@ export class FirstPageComponent implements OnInit {
 
     }
   }
+  signUp() {
+    this.router.navigate(['/SignUp']);
+  }
     
 
 

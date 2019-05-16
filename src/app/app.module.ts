@@ -17,13 +17,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { FeedControllerService } from './Services/feed-controller.service';
 import { FirstPageComponent } from './first-page/first-page.component';
 import {SlideshowModule} from 'ng-simple-slideshow';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewsFeedComponent,
     NewsFeedItemComponent,
-    FirstPageComponent
+    FirstPageComponent,
+    SignUpComponent
   ],
   imports: [
     BrowserModule,
