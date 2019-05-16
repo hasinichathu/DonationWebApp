@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { FeedControllerService } from './Services/feed-controller.service';
 import { FirstPageComponent } from './first-page/first-page.component';
+import {SlideshowModule} from 'ng-simple-slideshow';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { FirstPageComponent } from './first-page/first-page.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule, // auth
     AngularFireStorageModule, // storage
-    HttpClientModule
+    HttpClientModule,
+    SlideshowModule,
   ],
   providers: [FeedControllerService ],
   bootstrap: [AppComponent]
