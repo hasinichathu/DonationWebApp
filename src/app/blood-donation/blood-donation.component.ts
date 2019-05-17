@@ -15,4 +15,13 @@ export class BloodDonationComponent implements OnInit {
   first(){
     this.router.navigate(['/first']);
   }
+  organ(){
+    this.router.navigate(['/OrganDonation']);
+  }
+  blood(){
+    this.router.navigate(['/BloodDonation']);
+  }
+  fund(){
+    this.router.navigate(['/FundRaising']);
+  }
 }

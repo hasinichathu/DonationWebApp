@@ -34,6 +34,15 @@ export class FirstPageComponent implements OnInit {
   fundRaising(){
     this.router.navigate(['/FundRaising']);
   }
+  organ(){
+    this.router.navigate(['/OrganDonation']);
+  }
+  blood(){
+    this.router.navigate(['/BloodDonation']);
+  }
+  // fund(){
+  //   this.router.navigate(['/FundRaising']);
+  // }
     
 
 
