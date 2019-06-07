@@ -6,6 +6,8 @@ import { FeedControllerService } from '../Services/feed-controller.service';
 import { AngularFireStorage , AngularFireStorageReference , AngularFireUploadTask } from 'angularfire2/storage';
 import {Upload} from '../Models/Upload';
 import {HttpClient} from '@angular/common/http';
+import { Router, ActivatedRoute } from '@angular/router';
+
 @Component({
   selector: 'app-news-feed',
   templateUrl: './news-feed.component.html',
@@ -21,7 +23,7 @@ export class NewsFeedComponent implements OnInit {
 
   constructor(private db: AngularFireDatabase, private afStorage: AngularFireStorage ,
     private feedController: FeedControllerService,
-    private http:HttpClient) { }
+    private http:HttpClient,private router: Router,) { }
 
   ngOnInit() {
     this.items = this.db.list('feedItem', db => db.orderByChild("name")).valueChanges();
@@ -64,6 +66,18 @@ export class NewsFeedComponent implements OnInit {
     console.log(event);
     this.selectedFile=event.target.files[0];
     
+  }
+  first(){
+    this.router.navigate(['/first']);
+  }
+  organ(){
+    this.router.navigate(['/OrganDonation']);
+  }
+  blood(){
+    this.router.navigate(['/BloodDonation']);
+  }
+  fund(){
+    this.router.navigate(['/FundRaising']);
   }
   
 }

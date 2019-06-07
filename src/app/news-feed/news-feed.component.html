@@ -28,21 +28,15 @@
         href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
       <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i
           class="fa fa-home w3-margin-right"></i>Logo</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i
+      <a (click)="first()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Home"><i
           class="fa fa-globe"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
-        title="Account Settings"><i class="fa fa-user"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Messages"><i
-          class="fa fa-envelope"></i></a>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span
-            class="w3-badge w3-right w3-small w3-green">3</span></button>
-        <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
-          <a href="#" class="w3-bar-item w3-button">One new friend request</a>
-          <a href="#" class="w3-bar-item w3-button">John Doe posted on your wall</a>
-          <a href="#" class="w3-bar-item w3-button">Jane likes your post</a>
-        </div>
-      </div>
+      <a (click)="organ()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        title="Organ Donations"><i class="fa fa-user"></i></a>
+      <a (click)="blood()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        title="Blood Donation"><i class="fa fa-envelope"></i></a>
+      <a (click)="fund()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        title="Fund raisings"><i class="fa fa-bell"></i>
+      </a>
       <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
         title="My Account">
         <!-- <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar"> -->
@@ -69,7 +63,7 @@
           <div class="w3-container">
             <h4 class="w3-center">My Profile</h4>
             <!-- <p class="w3-center"><img src="/w3images/avatar3.png" class="w3-circle" style="height:106px;width:106px" -->
-                <!-- alt="Avatar"></p> -->
+            <!-- alt="Avatar"></p> -->
             <hr>
             <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
             <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme"></i> London, UK</p>
@@ -162,10 +156,12 @@
             <div class="w3-card w3-round w3-white">
               <div class="w3-container w3-padding">
                 <h6 class="w3-opacity">Social Media template by w3.css</h6>
-                <input id="str" [(ngModel)]="feedItem" class="w3-border w3-padding w3-col m12" placeholder="Type a message" />
+                <input id="str" [(ngModel)]="feedItem" class="w3-border w3-padding w3-col m12"
+                  placeholder="Type a message" />
                 <br><br>
                 <!-- <p contenteditable="true" class="w3-border w3-padding">Status: Feeling Blue</p> -->
-                <button type="button" class="w3-button w3-theme"(click)="send(); " ><i class="fa fa-pencil"></i>  Post</button>
+                <button type="button" class="w3-button w3-theme" (click)="send(); "><i class="fa fa-pencil"></i>
+                   Post</button>
                 <input type="file" class="w3-button" (change)="upload($event)" accept=".jpg" />
               </div>
             </div>
@@ -173,7 +169,7 @@
         </div>
 
         <!--use message class to add loop -->
-        <div class="feedItem" *ngFor="let feedItem of items|async" >
+        <div class="feedItem" *ngFor="let feedItem of items|async">
 
           <div class="w3-container w3-card w3-white w3-round w3-margin"><br>
             <app-news-feed-item [feedItem]="feedItem"></app-news-feed-item>
