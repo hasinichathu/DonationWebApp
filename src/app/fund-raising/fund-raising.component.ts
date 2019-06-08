@@ -24,4 +24,8 @@ export class FundRaisingComponent implements OnInit {
   fund(){
     this.router.navigate(['/FundRaising']);
   }
+  donatingFrom(){
+    this.router.navigate(['/DonateMoney']);
+
+  }
 }

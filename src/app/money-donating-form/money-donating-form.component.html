@@ -1,0 +1,180 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body class="w3-theme-l5">
+
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme-d2 w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
+        href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i
+          class="fa fa-home w3-margin-right"></i>Logo</a>
+      <a (click)="first()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Home"><i
+          class="fa fa-compass"></i></a>
+      <a (click)="organ()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        title="Organ Donation"><i class="fa fa-heart-o"></i></a>
+      <a (click)="blood()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        title="Blood Donation"><i class="fa fa-tint"></i></a>
+      <a (click)="fund()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        title="Fund raising"><i class="fa fa-money"></i></a>
+
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
+        title="My Account">
+        <!-- <img src="/w3images/avatar2.png" class="w3-circle" style="height:23px;width:23px" alt="Avatar"> -->
+      </a>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">My Profile</a>
+  </div>
+
+  <!-- Page Container -->
+  <div class="w3-container w3-content" style="max-width:1400px;margin-top:50px">
+    <div class="w3-row">
+      <!-- Left Column --><br>
+      <div class="w3-col m2   ">
+        <div class=" w3-white">
+          <ul class=" w3-container w3-left w3-white w3-border w3-shadow">
+            <br>
+            <a class="w3-xlarge w3-padding-16">Menu</a><br>
+            <hr>
+            <a href="#" class="w3-bar-item w3-button w3-padding-8">Blood Donation</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-8">Fund Raising</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-8">What organs can you <br>donate?</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-8">What are the two types<br> of organ donation?</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Who pays when you <br>donate an organ?</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">What are the benefits <br>of organ donation?</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Do organ donors feel<br> pain?</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">What are the risks of<br> organ donation?</a><br>
+          </ul>
+        </div>
+
+      </div>
+      <div class="w3-col m1   ">
+      <div>sdsdsd</div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="w3-col m9">
+        <div class="w3-main">
+
+          <!-- Header -->
+          <header id="portfolio">
+            <a href="#"><img
+                src="https://vmcdn.ca/f/files/sootoday/images/galleries/old/2015-07-08-MIPARACON_-2-23.jpg;w=960;h=640;bgcolor=000000"
+                style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+            <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i
+                class="fa fa-bars"></i></span>
+            <div class="w3-container">
+              <h1><b>Fund Raising</b></h1>
+
+            </div>
+          </header>
+          <p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns
+            stack on top of each other instead of next to each other.</p>
+          <div class="row">
+            <div class="col-65">
+              <div class="container">
+                <form action="/action_page.php">
+
+                  <div class="row">
+                    <div class="col-50">
+                      <h3>Billing Address</h3>
+                      <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+                      <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                      <input type="text" id="email" name="email" placeholder="john@example.com">
+                      <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                      <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                      <label for="city"><i class="fa fa-institution"></i> City</label>
+                      <input type="text" id="city" name="city" placeholder="New York">
+
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="state">State</label>
+                          <input type="text" id="state" name="state" placeholder="NY">
+                        </div>
+                        <div class="col-50">
+                          <label for="zip">Zip</label>
+                          <input type="text" id="zip" name="zip" placeholder="10001">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-50">
+                      <h3>Payment</h3>
+                      <label for="fname">Accepted Cards</label>
+                      <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                      </div>
+                      <label for="cname">Name on Card</label>
+                      <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                      <label for="ccnum">Credit card number</label>
+                      <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                      <label for="expmonth">Exp Month</label>
+                      <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                      <div class="row">
+                        <div class="col-50">
+                          <label for="expyear">Exp Year</label>
+                          <input type="text" id="expyear" name="expyear" placeholder="2018">
+                        </div>
+                        <div class="col-50">
+                          <label for="cvv">CVV</label>
+                          <input type="text" id="cvv" name="cvv" placeholder="352">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                  </label>
+                  <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+          <!-- End page content -->
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <br>
+
+  <!-- Footer -->
+  <footer class="w3-container w3-theme-d3 w3-padding-16">
+    <h5>Footer</h5>
+  </footer>
+
+  <footer class="w3-container w3-theme-d5">
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+
+
+</body>
