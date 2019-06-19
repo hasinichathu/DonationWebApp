@@ -23,6 +23,7 @@ import { OrganDonationComponent } from './organ-donation/organ-donation.componen
 import { FundRaisingComponent } from './fund-raising/fund-raising.component';
 
 import { MoneyDonatingFormComponent } from './money-donating-form/money-donating-form.component';
+import { BloodDonationStoriesComponent } from './blood-donation-stories/blood-donation-stories.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { MoneyDonatingFormComponent } from './money-donating-form/money-donating
     BloodDonationComponent,
     OrganDonationComponent,
     FundRaisingComponent,
-    MoneyDonatingFormComponent
+    MoneyDonatingFormComponent,
+    BloodDonationStoriesComponent
   ],
   imports: [
     BrowserModule,

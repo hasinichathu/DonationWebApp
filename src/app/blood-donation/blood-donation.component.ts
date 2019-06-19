@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Observable } from 'rxjs';
+import { AngularFireDatabase, AngularFireList } from "angularfire2/database"
+import {FeedItem} from '../Models/FeedItem.model';
 
 @Component({
   selector: 'app-blood-donation',
@@ -7,11 +10,19 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./blood-donation.component.css']
 })
 export class BloodDonationComponent implements OnInit {
-
-  constructor(private router: Router,) { }
+  items: Observable<any[]>;
+  
+  constructor(private router: Router,private db: AngularFireDatabase,) { }
 
   ngOnInit() {
+    this.items = this.db.list('feedItem', db => db.orderByChild("name")).valueChanges();
+    // this return all data in one news feed item
   }
+  ngOnChanges() {
+    this.items = this.db.list('feedItem', db => db.orderByChild("name")).valueChanges();
+
+  }
+
   first(){
     this.router.navigate(['/first']);
   }

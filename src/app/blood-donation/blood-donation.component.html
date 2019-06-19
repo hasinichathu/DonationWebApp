@@ -97,7 +97,21 @@
               </div>
             </div>
           </header>
-
+<!-- ////////////////////////////////////////// -->
+<div #scrollBottom  *ngFor="let patient of items|async" class="message">
+     
+  <div class="w3-third w3-container w3-margin-bottom">
+    <img
+      src={{patient.photoURL}}
+      alt="Norway" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+      <p><b>Lorem Ipsum</b></p>
+      <p>{{patient.feedItem}}</p>
+    </div>
+  </div>
+  
+</div>
+<!-- ////////////////////////////////////////////// -->
           <!-- First Photo Grid-->
           <div class="w3-row-padding">
             <div class="w3-third w3-container w3-margin-bottom">
