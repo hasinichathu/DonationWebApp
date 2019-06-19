@@ -163,6 +163,9 @@
                 <button type="button" class="w3-button w3-theme" (click)="send(); "><i class="fa fa-pencil"></i>
                    Post</button>
                 <input type="file" class="w3-button" (change)="upload($event)" accept=".jpg" />
+                <input type="radio" id="r1" [(ngModel)]="donation" value="organ"> Organ
+                <input type="radio" id="r2"[(ngModel)]="donation" value="blood"> Blood
+                <input type="radio" id="r3"[(ngModel)]="donation" value="fund">Fund
               </div>
             </div>
           </div>

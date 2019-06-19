@@ -15,11 +15,11 @@ export class BloodDonationComponent implements OnInit {
   constructor(private router: Router,private db: AngularFireDatabase,) { }
 
   ngOnInit() {
-    this.items = this.db.list('feedItem', db => db.orderByChild("name")).valueChanges();
+    this.items = this.db.list('feedItem', db => db.orderByChild("donationType").equalTo("blood")).valueChanges();
     // this return all data in one news feed item
   }
   ngOnChanges() {
-    this.items = this.db.list('feedItem', db => db.orderByChild("name")).valueChanges();
+    this.items = this.db.list('feedItem', db => db.orderByChild("donationType").equalTo("blood")).valueChanges();
 
   }
 

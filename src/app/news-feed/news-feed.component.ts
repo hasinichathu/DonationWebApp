@@ -19,6 +19,7 @@ export class NewsFeedComponent implements OnInit {
   urlForSave: string;
   selectedFile =null;
   number:number;
+  donation:string;
   filePath = '/uploads/'+this.number;
 
   constructor(private db: AngularFireDatabase, private afStorage: AngularFireStorage ,
@@ -51,11 +52,15 @@ export class NewsFeedComponent implements OnInit {
 
   }
   sendToDatabase(url:string){
+    
     var messagesRef = firebase.database().ref('feedItem');
     messagesRef.push({
       name: "sample name",
       feedItem: this.feedItem,
-      photoURL:url
+      photoURL:url,
+      donationType:this.donation,
+      date:new Date(),
+      completed:false
     });
 
     this.feedItem = "";
