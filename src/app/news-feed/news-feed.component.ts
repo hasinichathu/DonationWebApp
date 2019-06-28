@@ -20,7 +20,7 @@ export class NewsFeedComponent implements OnInit {
   selectedFile =null;
   number:number;
   donation:string;
-  filePath = '/uploads/'+this.number;
+  filePath = '/uploads/'+new Date();
 
   constructor(private db: AngularFireDatabase, private afStorage: AngularFireStorage ,
     private feedController: FeedControllerService,

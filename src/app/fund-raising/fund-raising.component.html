@@ -61,7 +61,7 @@
           <ul class=" w3-container w3-left w3-white w3-border w3-shadow">
               <br>
             <a class="w3-xlarge w3-padding-16">Menu</a><br><hr>
-            <a href="#" class="w3-bar-item w3-button w3-padding-8">Blood Donation</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-8"><i class="fa fa-remove fa-fw"></i>Blood Donation</a><br>
             <a href="#" class="w3-bar-item w3-button w3-padding-8">Fund Raising</a><br>
             <a href="#" class="w3-bar-item w3-button w3-padding-8">What organs can you <br>donate?</a><br>
             <a href="#" class="w3-bar-item w3-button w3-padding-8">What are the two types<br> of organ donation?</a>
@@ -89,19 +89,35 @@
             <div class="w3-container">
               <h1><b>Fund Raising</b></h1>
               <div class="w3-section w3-bottombar w3-padding-16">
-                <span class="w3-margin-right">Filter:</span>
+                <!-- <span class="w3-margin-right">Filter:</span>
                 <button class="w3-button w3-black">ALL</button>
                 <button class="w3-button w3-white"><i class="fa fa-diamond w3-margin-right"></i>Kidney</button>
                 <button class="w3-button w3-white w3-hide-small"><i
                     class="fa fa-photo w3-margin-right"></i>Eyes</button>
                 <button class="w3-button w3-white w3-hide-small"><i
-                    class="fa fa-map-pin w3-margin-right"></i>Liver</button>
+                    class="fa fa-map-pin w3-margin-right"></i>Liver</button> -->
               </div>
             </div>
           </header>
 
+           <!-- ////////////////////////////////////////// -->
+           <div #scrollBottom *ngFor="let patient of items|async" class="message">
+
+            <div class="w3-third w3-container w3-margin-bottom">
+              <img src={{patient.photoURL}} alt="Norway" style="width:100%" class="w3-hover-opacity">
+              <div class="w3-container w3-white">
+                <p><b>Lorem Ipsum</b></p>
+                <p>{{patient.feedItem}}</p>
+                <button class="w3-button w3-green w3-padding-large d-button" (click)="donatingFrom()">Donate</button>
+
+              </div>
+
+            </div>
+
+          </div>
+          <!-- ////////////////////////////////////////////// -->
           <!-- First Photo Grid-->
-          <div class="w3-row-padding">
+          <!-- <div class="w3-row-padding">
             <div class="w3-third w3-container w3-margin-bottom">
               <img
                 src="https://vmcdn.ca/f/files/sudbury/uploadedImages/news/localNews/2019/03/110319_gofundme-vicky-pineau4.jpg;w=960;h=640;bgcolor=000000"
@@ -135,10 +151,10 @@
                   congue gravida diam non fringilla.</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Second Photo Grid-->
-          <div class="w3-row-padding">
+          <!-- <div class="w3-row-padding">
             <div class="w3-third w3-container w3-margin-bottom">
               <img
                 src="https://images.labroots.com/content_article_profile_image_e36b6c060187086882fc5578e310adcdd80572d2_3139.jpg"
@@ -168,7 +184,7 @@
                   congue gravida diam non fringilla.</p>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- Pagination -->
           <div class="w3-center w3-padding-32">

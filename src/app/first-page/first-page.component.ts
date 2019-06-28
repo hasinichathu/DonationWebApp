@@ -9,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class FirstPageComponent implements OnInit {
   uname:string;
   psw:string;
-  imageSources:string[]=['https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg', 
+  imageSources:string[]=['https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg', 'https://www.goodnet.org/photos/620x0/26772_hd.jpg',
   'https://www.fjords.com/wp-content/uploads/2018/12/DSC_6281-2000x1200.jpg','https://cdn.pixabay.com/photo/2013/10/02/23/03/dawn-190055__340.jpg'];
   constructor(private router: Router, ) { }
 
