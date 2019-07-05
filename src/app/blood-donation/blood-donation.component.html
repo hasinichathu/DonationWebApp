@@ -27,7 +27,7 @@
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2"
         href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
       <a class="w3-bar-item w3-button w3-padding-large w3-theme-d4">
-        <i class="fa fa-home w3-margin-right"></i>Logo</a>
+        <i class="fa fa-home w3-margin-right"></i>CHARITY MINDS</a>
 
       <a (click)="first()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Home"><i
           class="fa fa-compass"></i></a>
@@ -60,14 +60,14 @@
             <br>
             <a class="w3-xlarge w3-padding-16">Menu</a><br>
             <hr>
-            <a href="#" class="w3-bar-item w3-button w3-padding-8">Blood Donation</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-8">Organ Donation</a><br>
             <a href="#" class="w3-bar-item w3-button w3-padding-8">Fund Raising</a><br>
-            <a href="#" class="w3-bar-item w3-button w3-padding-8">What organs can you <br>donate?</a><br>
-            <a href="#" class="w3-bar-item w3-button w3-padding-8">What are the two types<br> of organ donation?</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Who pays when you <br>donate an organ?</a><br>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">What are the benefits <br>of organ donation?</a><br>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">Do organ donors feel<br> pain?</a><br>
-            <a href="#" class="w3-bar-item w3-button w3-padding-16">What are the risks of<br> organ donation?</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-8">Blood types</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-8">How can you donate<br> blood?</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Who pays when you <br>donate blood?</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">What are the benefits <br>of blood donation?</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">Do blood donors feel<br> pain?</a><br>
+            <a href="#" class="w3-bar-item w3-button w3-padding-16">What are the risks of<br> blood donation?</a><br>
           </ul>
         </div>
 
@@ -102,9 +102,9 @@
           <div #scrollBottom *ngFor="let patient of items|async" class="message">
 
             <div class="w3-third w3-container w3-margin-bottom">
-              <img src={{patient.photoURL}} alt="Norway" style="width:100%" class="w3-hover-opacity">
+              <img src={{patient.photoURL}} alt="Norway" style="width:350px;height:200px;" class="w3-hover-opacity">
               <div class="w3-container w3-white">
-                <p><b>Lorem Ipsum</b></p>
+                <!-- <p><b>Lorem Ipsum</b></p> -->
                 <p>{{patient.feedItem}}</p>
               </div>
             </div>
@@ -178,17 +178,7 @@
             </div>
           </div> -->
 
-          <!-- Pagination -->
-          <div class="w3-center w3-padding-32" style="float: bottom;">
-            <div class="w3-bar">
-              <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-              <a href="#" class="w3-bar-item w3-black w3-button">1</a>
-              <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
-              <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
-              <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
-              <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
-            </div>
-          </div>
+          
 
 
           <!-- End page content -->
@@ -200,7 +190,17 @@
     </div>
   </div>
   <br>
-
+<!-- Pagination -->
+<div class="w3-center w3-padding-64" >
+  <div class="w3-bar">
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+    <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+  </div>
+</div>
   <!-- Footer -->
   <footer class="w3-container w3-theme-d3 w3-padding-16">
     <h5>Footer</h5>

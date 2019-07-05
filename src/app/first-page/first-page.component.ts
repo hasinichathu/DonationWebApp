@@ -7,10 +7,15 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./first-page.component.css']
 })
 export class FirstPageComponent implements OnInit {
-  uname:string;
-  psw:string;
-  imageSources:string[]=['https://cdn.pixabay.com/photo/2018/01/14/23/12/nature-3082832__340.jpg', 'https://www.goodnet.org/photos/620x0/26772_hd.jpg',
-  'https://www.fjords.com/wp-content/uploads/2018/12/DSC_6281-2000x1200.jpg','https://cdn.pixabay.com/photo/2013/10/02/23/03/dawn-190055__340.jpg'];
+  uname: string;
+  psw: string;
+  imageSources: string[] = [
+    'https://i.ytimg.com/vi/vAXJ42Mssmk/maxresdefault.jpg',
+    'https://www.unlockfood.ca/EatRightOntario/media/Website-images-resized/Healthy-School-Fundraising-resized.jpg',
+    'https://www.goodnet.org/photos/620x0/26772_hd.jpg',
+    'https://blog.espares.co.uk/wp-content/uploads/sites/28/2016/03/Brainstorming-Ideas-For-Charity-Fundraising.jpg',
+    'https://media-cdn.tripadvisor.com/media/photo-s/0e/b8/a1/e8/activity-studio-medical.jpg'
+    ];
   constructor(private router: Router, ) { }
 
   ngOnInit() {
@@ -25,25 +30,25 @@ export class FirstPageComponent implements OnInit {
   signUp() {
     this.router.navigate(['/SignUp']);
   }
-  organDoners(){
+  organDoners() {
     this.router.navigate(['/OrganDonation']);
   }
-  bloodDoners(){
+  bloodDoners() {
     this.router.navigate(['/BloodDonation']);
   }
-  fundRaising(){
+  fundRaising() {
     this.router.navigate(['/FundRaising']);
   }
-  organ(){
+  organ() {
     this.router.navigate(['/OrganDonation']);
   }
-  blood(){
+  blood() {
     this.router.navigate(['/BloodDonation']);
   }
   // fund(){
   //   this.router.navigate(['/FundRaising']);
   // }
-    
+
 
 
 
