@@ -24,6 +24,11 @@ import { FundRaisingComponent } from './fund-raising/fund-raising.component';
 
 import { MoneyDonatingFormComponent } from './money-donating-form/money-donating-form.component';
 import { BloodDonationStoriesComponent } from './blood-donation-stories/blood-donation-stories.component';
+import { HappyStoryComponent } from './happy-story/happy-story.component';
+import { EventComponent } from './event/event.component';
+import { OrgansYouCanDonateComponent } from './organs-you-can-donate/organs-you-can-donate.component';
+import { WhoPaysYouComponent } from './who-pays-you/who-pays-you.component';
+import { BenifitsComponent } from './benifits/benifits.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +41,12 @@ import { BloodDonationStoriesComponent } from './blood-donation-stories/blood-do
     OrganDonationComponent,
     FundRaisingComponent,
     MoneyDonatingFormComponent,
-    BloodDonationStoriesComponent
+    BloodDonationStoriesComponent,
+    HappyStoryComponent,
+    EventComponent,
+    OrgansYouCanDonateComponent,
+    WhoPaysYouComponent,
+    BenifitsComponent
   ],
   imports: [
     BrowserModule,

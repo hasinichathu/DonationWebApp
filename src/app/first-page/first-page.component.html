@@ -37,6 +37,10 @@
         title="Blood Donation"><i class="fa fa-tint"></i></a>
       <a (click)="fundRaising()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
         title="Fund raisings"><i class="fa fa-money"></i></a>
+        <a (click)="happyStories()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        title="Fund raisings"><i class="fa fa-money"></i></a>
+        <a (click)="events()" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"
+        title="Fund raisings"><i class="fa fa-money"></i></a>
 
       <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white"
         title="My Account"> -->
@@ -67,7 +71,7 @@
         <div class="w3-col m8">
           <slideshow [height]="height" [minHeight]="'509px'" [autoPlay]="true" [showArrows]="true"
             [imageUrls]=imageSources [lazyLoad]="imageSources?.length > 1" [autoPlayWaitForLazyLoad]="true"
-            [showDots]="true">
+            [showDots]="true" [stopAutoPlayOnSlide]="true"  [autoPlayInterval] = 6333>
           </slideshow>
         </div>
 

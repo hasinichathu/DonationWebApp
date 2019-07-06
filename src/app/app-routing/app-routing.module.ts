@@ -10,6 +10,8 @@ import { OrganDonationComponent } from '../organ-donation/organ-donation.compone
 import { FundRaisingComponent } from '../fund-raising/fund-raising.component';
 
 import { MoneyDonatingFormComponent } from '../money-donating-form/money-donating-form.component';
+import { HappyStoryComponent } from '../happy-story/happy-story.component';
+import { EventComponent } from '../event/event.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/first', pathMatch: 'full' },
@@ -20,6 +22,8 @@ const routes: Routes = [
   {path: 'OrganDonation', component: OrganDonationComponent},
   {path: 'FundRaising', component: FundRaisingComponent},
   {path: 'DonateMoney', component: MoneyDonatingFormComponent},
+  {path: 'HappyStory', component: HappyStoryComponent},
+  {path: 'Events', component: EventComponent},
 
 ];
     
