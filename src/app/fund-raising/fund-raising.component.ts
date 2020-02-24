@@ -36,4 +36,10 @@ export class FundRaisingComponent implements OnInit {
     this.router.navigate(['/DonateMoney']);
 
   }
+  happyStories(){
+    this.router.navigate(['/HappyStory']);
+  }
+  events(){
+    this.router.navigate(['/Events']);
+  }
 }

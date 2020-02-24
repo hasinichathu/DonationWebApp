@@ -32,4 +32,10 @@ export class OrganDonationComponent implements OnInit {
   fund(){
     this.router.navigate(['/FundRaising']);
   }
+  happyStories(){
+    this.router.navigate(['/HappyStory']);
+  }
+  events(){
+    this.router.navigate(['/Events']);
+  }
 }
